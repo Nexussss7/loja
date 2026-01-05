@@ -37,7 +37,7 @@ export default function Login() {
         setLoading(true);
         try {
             // Create user ramonrodrigo2708@gmail.com with password '123456'
-            const { data, error } = await supabase.auth.signUp({
+            const { error } = await supabase.auth.signUp({
                 email: 'ramonrodrigo2708@gmail.com',
                 password: '123456',
             });

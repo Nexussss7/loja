@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useParams, Link } from 'react-router-dom';
-import { supabase, type Category, type Product, type ProductVariant } from '@/lib/supabase';
+import { supabase, type Category, type ProductVariant } from '@/lib/supabase';
 import { ArrowLeft, Save, Sparkles, Plus, Trash2, Loader2 } from 'lucide-react';
 import MultiImageUpload, { type UploadedImage } from '@/components/MultiImageUpload';
 

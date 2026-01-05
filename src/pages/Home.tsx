@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { ProductCard } from "@/components/ProductCard";
 import { motion } from "framer-motion";
-import { supabase, type Product } from "@/lib/supabase";
+import { supabase } from "@/lib/supabase";
 
 export default function Home() {
-    const [products, setProducts] = useState<Product[]>([]);
+    const [products, setProducts] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {

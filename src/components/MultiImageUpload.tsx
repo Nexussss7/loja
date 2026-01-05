@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { supabase } from '@/lib/supabase';
-import { Upload, X, ArrowLeft, ArrowRight, Loader2, Image as ImageIcon } from 'lucide-react';
+import { Upload, X, ArrowLeft, ArrowRight, Loader2 } from 'lucide-react';
 
 export interface UploadedImage {
   url: string;
@@ -83,12 +83,12 @@ export default function MultiImageUpload({
   };
 
   const handleRemove = async (index: number) => {
-    const imageToRemove = images[index];
     // Optional: Delete from storage immediately, or just remove from list and let cleanup happen later
     // For now, let's just remove from the list to avoid accidental deletion of shared images if logic changes
 
     // If you want to delete from bucket:
     /*
+    const imageToRemove = images[index];
     const { error } = await supabase.storage.from('products').remove([imageToRemove.path]);
     if (error) console.error('Error deleting file:', error);
     */

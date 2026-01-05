@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { supabase, type Product } from '@/lib/supabase';
-import { Plus, LayoutGrid, Package, Eye, PackageOpen, Tag, AlertTriangle, DollarSign } from 'lucide-react';
+import { Plus, Package, Eye, PackageOpen, Tag, AlertTriangle, DollarSign } from 'lucide-react';
 
 interface DashboardStats {
     totalProducts: number;
